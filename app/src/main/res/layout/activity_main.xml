@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="dd/mm/yyyy"
+        android:textColor="@color/darkpink"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tarihi Değiştir"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRangeDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonRangeDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tarih Aralığı Seç"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDateFormat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDate"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonDateFormat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tarih Formatı"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRangeDate"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Saat Seç"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToggleTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDateFormat"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonToggleTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tema Değiştir"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChangeLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTime"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintWidth_default="spread" />
+
+    <Button
+        android:id="@+id/buttonChangeLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Dili Değiştir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToggleTheme"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintWidth_default="spread" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
